@@ -1,0 +1,6 @@
+id=hide_bar
+name=小横条隐藏及输入法高度去除
+version=12.11
+versionCode=1211
+author=酷安@天伞桜
+description=仅支持基于AOSP12/Caf12的类原生/Pixel系统

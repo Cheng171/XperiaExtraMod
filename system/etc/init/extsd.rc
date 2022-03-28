@@ -1,0 +1,9 @@
+service extsd /system/bin/sh -c "settings put global force_allow_on_external 1"
+
+    seclabel u:r:shell:s0
+    user root
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start extsd

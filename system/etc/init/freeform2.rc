@@ -1,0 +1,9 @@
+service freeform2 /system/bin/sh -c "settings put global enable_non_resizable_multi_window 1"
+
+    seclabel u:r:shell:s0
+    user root
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start freeform2
